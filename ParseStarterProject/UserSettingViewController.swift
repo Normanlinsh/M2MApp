@@ -42,7 +42,9 @@ class UserSettingViewController: UIViewController {
         
         if (segue.identifier == "logout"){
             var loginVC = segue.destinationViewController as! ViewController
-            loginVC.loggedIn = false
+            //loginVC.loggedIn = false
+            //loginVC.passwordText.text = ""
+            //loginVC.usernameText.text = ""
         }
     }
     

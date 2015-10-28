@@ -12,8 +12,6 @@ import Parse
 
 class ViewController: UIViewController {
     
-    var loggedIn = false
-    
     var signUpActive = true
 
     @IBOutlet weak var usernameText: UITextField!
@@ -45,7 +43,6 @@ class ViewController: UIViewController {
                 activitiyIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
                 view.addSubview(activitiyIndicator)
                 activitiyIndicator.startAnimating()
-                
                 UIApplication.sharedApplication().beginIgnoringInteractionEvents()
                 
                 var user = PFUser()
@@ -62,8 +59,9 @@ class ViewController: UIViewController {
                     if error == nil {
                         
                         //sign up successful
+                        self.usernameText.text = ""
+                        self.passwordText.text = ""
                         self.performSegueWithIdentifier("login", sender: self)
-                        self.zloggedIn = true
                         
                     } else {
                         if let errorString = error!.userInfo?["error"] as? String {
@@ -81,6 +79,8 @@ class ViewController: UIViewController {
                 activitiyIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
                 view.addSubview(activitiyIndicator)
                 activitiyIndicator.startAnimating()
+                UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+
                 
                 PFUser.logInWithUsernameInBackground(usernameText.text, password: passwordText.text, block: { (user, error) -> Void in
                     
@@ -90,8 +90,10 @@ class ViewController: UIViewController {
                     if user != nil {
                         
                         //logged in
+                        self.usernameText.text = ""
+                        self.passwordText.text = ""
                         self.performSegueWithIdentifier("login", sender: self)
-                        self.loggedIn = true
+                        
                         
                     } else {
                         var errorMsg = "Login failed"
@@ -150,13 +152,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    /*
     override func viewDidAppear(animated: Bool) {
-        
-        if loggedIn == true {
-            
-            self.performSegueWithIdentifier("login", sender: self)
+        if PFUser.currentUser() != nil {
+            performSegueWithIdentifier("login", sender: self)
         }
     }
+    */
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
