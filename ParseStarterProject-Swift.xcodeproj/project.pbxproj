@@ -12,6 +12,7 @@
 		401D4AC01BDFD4FB000504BA /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401D4ABF1BDFD4FB000504BA /* UserSettingViewController.swift */; };
 		401D4AC21BDFDB6E000504BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401D4AC11BDFDB6E000504BA /* Main.storyboard */; };
 		401D4AC41BE0014B000504BA /* Screen Shot 2015-10-27 at 11.53.33 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 401D4AC31BE0014B000504BA /* Screen Shot 2015-10-27 at 11.53.33 AM.png */; };
+		430FEC6C1BEA3DC600DC6364 /* AudioEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430FEC6B1BEA3DC600DC6364 /* AudioEditViewController.swift */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
 		81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		401D4ABF1BDFD4FB000504BA /* UserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
 		401D4AC11BDFDB6E000504BA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		401D4AC31BE0014B000504BA /* Screen Shot 2015-10-27 at 11.53.33 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2015-10-27 at 11.53.33 AM.png"; sourceTree = "<group>"; };
+		430FEC6B1BEA3DC600DC6364 /* AudioEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioEditViewController.swift; path = ../AudioEditViewController.swift; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BA81451A49DA1800E65899 /* ParseStarterProject-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParseStarterProject-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				430FEC6B1BEA3DC600DC6364 /* AudioEditViewController.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				401D4AC11BDFDB6E000504BA /* Main.storyboard */,
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430FEC6C1BEA3DC600DC6364 /* AudioEditViewController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				401D4ABC1BDFC9FD000504BA /* FriendListTableViewController.swift in Sources */,
 				401D4AC01BDFD4FB000504BA /* UserSettingViewController.swift in Sources */,
